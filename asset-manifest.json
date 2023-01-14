@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/playoff-pool/static/css/main.073c9b0a.css",
-    "main.js": "/playoff-pool/static/js/main.99d7220c.js",
+    "main.css": "/playoff-pool/static/css/main.359c73f6.css",
+    "main.js": "/playoff-pool/static/js/main.45afb9b1.js",
     "static/js/787.6dff6f30.chunk.js": "/playoff-pool/static/js/787.6dff6f30.chunk.js",
-    "static/media/logo.svg": "/playoff-pool/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/primeicons.svg": "/playoff-pool/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/primeicons.eot": "/playoff-pool/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/playoff-pool/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/playoff-pool/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/primeicons.woff2": "/playoff-pool/static/media/primeicons.78172950b335ccdb94e2.woff2",
     "index.html": "/playoff-pool/index.html",
-    "main.073c9b0a.css.map": "/playoff-pool/static/css/main.073c9b0a.css.map",
-    "main.99d7220c.js.map": "/playoff-pool/static/js/main.99d7220c.js.map",
+    "main.359c73f6.css.map": "/playoff-pool/static/css/main.359c73f6.css.map",
+    "main.45afb9b1.js.map": "/playoff-pool/static/js/main.45afb9b1.js.map",
     "787.6dff6f30.chunk.js.map": "/playoff-pool/static/js/787.6dff6f30.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.99d7220c.js"
+    "static/css/main.359c73f6.css",
+    "static/js/main.45afb9b1.js"
   ]
 }
