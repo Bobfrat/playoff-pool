@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/playoff-pool/static/css/main.71479ab2.css",
-    "main.js": "/playoff-pool/static/js/main.6bdb1d54.js",
+    "main.js": "/playoff-pool/static/js/main.959da0ce.js",
     "static/js/787.6dff6f30.chunk.js": "/playoff-pool/static/js/787.6dff6f30.chunk.js",
     "static/media/primeicons.svg": "/playoff-pool/static/media/primeicons.e1441b135b3ca9ad643c.svg",
     "static/media/primeicons.eot": "/playoff-pool/static/media/primeicons.d44157bdfa026dc877af.eot",
@@ -10,11 +10,11 @@
     "static/media/primeicons.woff2": "/playoff-pool/static/media/primeicons.78172950b335ccdb94e2.woff2",
     "index.html": "/playoff-pool/index.html",
     "main.71479ab2.css.map": "/playoff-pool/static/css/main.71479ab2.css.map",
-    "main.6bdb1d54.js.map": "/playoff-pool/static/js/main.6bdb1d54.js.map",
+    "main.959da0ce.js.map": "/playoff-pool/static/js/main.959da0ce.js.map",
     "787.6dff6f30.chunk.js.map": "/playoff-pool/static/js/787.6dff6f30.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.71479ab2.css",
-    "static/js/main.6bdb1d54.js"
+    "static/js/main.959da0ce.js"
   ]
 }
