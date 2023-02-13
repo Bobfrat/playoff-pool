@@ -1,4 +1,32 @@
 {
-	"winners": ["SF", "JAX", "BUF", "NYG", "CIN"],
-	"losers": ["SEA", "LAC", "MIA", "MIN", "BAL"]
+	"winners": [
+		"JAX",
+		"BUF",
+		"NYG",
+		"DAL",
+		"CIN",
+		"CIN",
+		"SF",
+		"SF",
+		"PHI",
+		"PHI",
+		"KC",
+		"KC",
+		"KC"
+	],
+	"losers": [
+		"SEA",
+		"LAC",
+		"MIA",
+		"MIN",
+		"BAL",
+		"TB",
+		"JAX",
+		"NYG",
+		"BUF",
+		"DAL",
+		"SF",
+		"CIN",
+		"PHI"
+	]
 }

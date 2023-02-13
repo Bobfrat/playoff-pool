@@ -18,7 +18,7 @@ function App() {
       <Navigation />
       <h1>NFL Playoff Pool</h1>
       <h2>Total payout: $240</h2>
-      <h5>Last Updated: After CIN-BAL Wildcard game</h5>
+      <h5>Last Updated: After Super Bowl</h5>
       <TabView
         activeIndex={activeIndex}
         onTabChange={(e) => setActiveIndex(e.index)}
@@ -31,6 +31,15 @@ function App() {
         </TabPanel>
         <TabPanel header="Chart">
           <BarChart />
+        </TabPanel>
+        <TabPanel header="Notes">
+          <ul>
+            <li>
+              Play of the Week: Matt Frat with the bold DAL pick! Let's see if
+              it pays off!
+              <li>It did not pay off</li>
+            </li>
+          </ul>
         </TabPanel>
         {/*<TabPanel header="What-if Standings">
           <WhatIfTable />

@@ -4,6 +4,17 @@ import HighchartsReact from "highcharts-react-official";
 import picks from "../../data/picks.json";
 import results from "../../data/results.json";
 
+const colors = [
+  "#7cb5ec",
+  "#434348",
+  "#90ed7d",
+  "#f7a35c",
+  "#8085e9",
+  "#8d4653",
+  "#F1DA62",
+  "#DF5353",
+  "#2754BB"
+];
 /**
  * This component renders the data table
  */
@@ -13,22 +24,45 @@ function BarChart() {
   const users = Object.keys(picks.data);
   const gameResults = results.winners;
 
-  const series = gameResults.map((team) => {
-    // let score = 0;
-    // gameResults.forEach(function (result) {
-    //   score += picks.data[user][result];
-    // });
-
-    const data = users.map((user) => {
-      return [user, picks.data[user][team]];
+  const userScores = users.map((user) => {
+    let score = 0;
+    gameResults.forEach(function (result) {
+      score += picks.data[user][result];
     });
     return {
+      id: user,
+      score
+    };
+  });
+
+  const sortedScores = userScores.sort((a, b) => {
+    return b.score - a.score;
+  });
+  const sortedUsers = sortedScores.map((a) => a.id);
+
+  let winningTeamColors = {};
+  let colorInd = 0;
+  const series = gameResults.map((team) => {
+    const data = sortedUsers.map((user) => {
+      const score = picks.data[user][team];
+      return [user, score];
+    });
+    const winningTeams = Object.keys(winningTeamColors);
+    const showInLegend = !winningTeams.includes(team);
+    let color;
+    if (winningTeams.includes(team)) {
+      color = winningTeamColors[team];
+    } else {
+      color = colors[colorInd];
+      colorInd += 1;
+    }
+    winningTeamColors[team] = color;
+    console.log(winningTeamColors, team);
+    return {
       name: team,
-      // dataSorting: {
-      //   enabled: true
-      //   sortKey: "y"
-      // },
-      data
+      data,
+      color,
+      showInLegend
     };
   });
 
@@ -43,13 +77,18 @@ function BarChart() {
       type: "bar"
     },
     xAxis: {
-      categories: users,
+      // categories: users,
       title: {
         text: null
       },
       labels: {
-        animate: true
-      }
+        // animate: true,
+        formatter: function () {
+          // console.log(this);
+          return this.value;
+        }
+      },
+      type: "category"
     },
     yAxis: {
       min: 0,
@@ -68,6 +107,10 @@ function BarChart() {
       series: {
         stacking: "normal"
       }
+      // dataSorting: {
+      //   enabled: true,
+      //   sortKey: "y"
+      // }
     },
     series
   };
